@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>Are We  Not Men?</title>
+
+      <style>
+          p {
+              color: blue;
+          }
+    </style>
+</head>
+
+<body>
+      <p>Guess a number between 1 and 10</p>
+      <input id='guess'/>
+      <button onclick='clicked()'>Click Me!</button>
+      <p id='result'></p>
+
+      <script>
+
+      function clicked () {
+         var guess = document.getElementById('guess');
+         var result = document.getElementById('result');
+
+         var value = parseInt( guess.value)
+         if (guess.value == 8) {
+              result.innerHTML = 'you got it!';
+         }
+         else {
+              result.innerHTML = 'no good try again';
+         }
+     }
+      </script>
+</body>
+
+</html>
